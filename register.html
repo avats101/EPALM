@@ -45,6 +45,10 @@
         <form action="connect.php" method="post">
           <div class="row">
             <div class="col-md-8 mb-3">
+              <label for="reg_num">Registration Number</label>
+              <input type="text" class="form-control" id="reg_num" name="reg_num" placeholder="" value="" required>
+            </div>
+            <div class="col-md-8 mb-3">
               <label for="firstName">First name</label>
               <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required>
             </div>
@@ -69,15 +73,16 @@
             <div class="row">
               
             <div class="mb-3 col-md-8">
-              <label for="email">Email </label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+              <label for="Email">Email </label>
+              <input type="Email" class="form-control" id="email" name="Email" placeholder="you@example.com">
             </div>
             <div class="mb-3 col-md-8">
-              <label for="password">Password </label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="New Password ">
+              <label for="Password">Password </label>
+              <input type="Password" class="form-control" id="Password" name="Password" placeholder="New Password ">
             </div>
           </div>
-            <center><a href="#myModal" class="trigger-btn" data-toggle="modal"><button type="button"  class="btn btn-primary trigger-btn" type="submit" value="Submit">Register</button></a>
+              <center>
+                <input type="submit" href="#myModal" class="trigger-btn btn btn-primary" data-toggle="modal" value="Register"/>
             </center>
         </form>
       </div>
