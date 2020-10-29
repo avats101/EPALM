@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once('register_operations.php');
+    require_once('operations.php');
 
     class dbconfig
     {

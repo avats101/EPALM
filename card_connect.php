@@ -10,12 +10,12 @@
     echo "$conn->connect_error";
     die("Connection Failed : ". $conn->connect_error);
   } else {
-    $stmt = $conn->prepare("insert into student(Expiry_Date,Name_on_Card, CVV, Registered_ph_no, Card_Number) values(?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssiii",$Expiry_Date, $Name_on_Card, $CVV, $Registered_ph_no, $Card_Number);
+    $stmt = $conn->prepare("insert into card_details(Expiry_Date, Name_on_Card, CVV, Registered_ph_no, Card_Number) values(?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssiii", $Expiry_Date, $Name_on_Card, $CVV, $Registered_ph_no, $Card_Number);
     $execeval = $stmt->execute();
     $stmt->close();
     $conn->close();
-    header("Location: register_success.html");
+    header("Location: cardview.php");
     exit();
   }
 ?>

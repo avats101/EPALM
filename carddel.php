@@ -8,7 +8,7 @@
         global $db;
         $ID = $_GET['D_ID'];
 
-        if($db->Delete_student_Record($ID))
+        if($db->Delete_payment_Record($ID))
         {
             $db->set_messsage('<div class="alert alert-danger">  Your Record Has Been Deleted </div>');
             //header("location:view.php");
@@ -26,7 +26,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Delete Student</title> 
+  <title>Delete Card</title> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://kit.fontawesome.com/3b4f2ecc11.js" crossorigin="anonymous"></script>
@@ -58,7 +58,7 @@
 <br><br><br><br><br><br>
 <center>
   <h2>
-    Student records Deleted Successfully!
+    Card Deleted Successfully!
   </h2>
   <br><br>
   <a href="index.html"><h5>
