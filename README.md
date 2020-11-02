@@ -2,6 +2,26 @@
 ## OBJECTIVE
 The current system of managing events and their related logistics of participants and speakers and guests is not completely computerised. Now this can lead to some catastrophic failures which in turn can lead to serious monetary problems for the organisers. As there is synchronising in the information being input there is a lot of room for error. This is where we and our project steps in to streamline and add end to end assurance to all colleges.
 <br>
+## INSTALLATION
+  1.Install XAMPP or WAMPP.
+
+  2.Open XAMPP Control panel and start [apache] and [mysql] servers.
+
+  3.Download project from github  OR follow gitbash commands
+
+  1.cd <directory to htdocs>
+
+  2.git clone https://github.com/avats101/EPALM.git
+
+  3.Open localhost/phpmyadmin
+
+  4.Create a Database named "eplam" 
+
+  5.After creating database name click on import and browse the file in directory[EPALM/events.sql].
+
+  6.After importing successfully.Open http://localhost/epalm. in any browser.
+
+
 ## FUTURE WORK
 <li>There are a lot of things that we can work on to improve the user experience. At this moment, event registration is not possible as the events table has not been connected to the database. Similarly tables  for club information and venue information are not connected to the database. For the events information table we have decided to add an attribute for event posters.</li>
 <li>Showing the posters of the events along with its details will allow the event organizers to better sell their event.</li>
