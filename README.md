@@ -9,9 +9,9 @@ The current system of managing events and their related logistics of participant
 
   3.Download project from github  OR follow gitbash commands
 
-  1.cd <directory to htdocs>
+  1.Change directory to directory to htdocs.
 
-  2.git clone https://github.com/avats101/EPALM.git
+  2.And then clone the Repo by <code>git clone https://github.com/avats101/EPALM.git </code>
 
   3.Open localhost/phpmyadmin
 
